@@ -60,17 +60,8 @@ console.log(worldCitiesLength);
 let isRomeInList = worldCities.includes("Rome"); // its case sensitive
 console.log(isRomeInList);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// reverse, sort the array
+let nums = [1, 7, 6, 4, 5];
+console.log(nums.sort());
+let rev = nums.reverse();
+console.log(rev);
