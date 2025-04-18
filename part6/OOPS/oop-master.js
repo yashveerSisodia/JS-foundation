@@ -1,4 +1,4 @@
-// class, inheritance, super, extends
+// class, inheritance, super, extends, encapsulation
 
 class Person {
 
@@ -35,5 +35,52 @@ class Animal extends Person {
     }
 }
 let animalOne = new Animal(personOne, "Human Being");
-console.log(animalOne);
-console.log(animalOne.description());
+// console.log(animalOne);
+// console.log(animalOne.description());
+
+
+// ENCAPSULATION: restricting the accessibility outiside of the class to the data object
+
+class BankAccount {
+    #balance = 0.00;  // '#' works as a private access modifier only accessible to class level.
+
+    depositeBalance(amount) {
+        this.#balance = amount;
+    } 
+
+    fetchBalance() {
+        return `INR ${this.#balance}`;
+    }
+}
+
+let bankAcc = new BankAccount(); // no args contructor because no constructor present in class
+
+// console.log(bankAcc.fetchBalance());
+// bankAcc.depositeBalance(19121);
+// console.log(bankAcc.fetchBalance());
+
+// note: can't have two constructor in the class. not allowed
+
+class User {
+
+    constructor(name, email) {
+        this.name = name;
+        this.email = email;
+    }
+
+    display() {
+        return `display`;
+    }
+}
+
+let testUser1 = new User();
+console.log(testUser1);
+console.log(testUser1.display());
+
+let testUser2 = new User("testUser2", "testUser2@example.com");
+console.log(testUser2);
+
+
+// ABSTRACTION: hiding complex stuff, just displaying the neccessary stuff.
+
+
