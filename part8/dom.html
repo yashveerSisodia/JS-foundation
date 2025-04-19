@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            color: lime;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="example-1">
+        <div>
+            <p id = "paragraph">this is the paragraph</p>
+            <button id="changeParagraph" type="button">Change Paragraph</button>
+        </div>
+    </section>
+
+    <section id="example-2">
+        <div>
+            <ul id="cityList">
+                <li>New York</li>
+                <li>KL</li>
+                <li>Paris</li>
+            </ul>
+            <button id="cityHighlight" type="button">Highlight first City</button>
+        </div>
+        <br>
+    </section>
+
+    <section id="example-3">
+        <div id="coffeeOrder">
+            Order: <span id="coffeeType">Latte</span>
+        </div>
+        <div>
+            <button id="changeOrder" type="button" onclick="changeOrder()">change order</button>
+        </div>
+        <br>
+    </section>
+
+    <section id="example-4">
+        <div>
+            <button id="addOrder" type="button">Clik to add order</button>
+            <ul id="orderList">
+                <li>Bread</li>
+                <li>Milk</li>
+                <li>Butter</li>
+            </ul>
+        </div>
+    </section>
+   
+    <section id="example-5">
+        <div>
+            <h1>Remove the task from the last</h1>
+            <ul id="tasks">
+                <li>task1</li>
+                <li>task2</li>
+                <li>task3</li>
+            </ul>
+            <button id="removeTask" type="button">Remove Task</button>
+        </div>
+    </section>
+
+    <section id="example-6">
+
+        <div>
+            <h1>Event Handling</h1>
+            <h2>select any tea type</h2>
+            <ul id="chai">
+                <li class="teaType">Olong Tea</li>
+                <li class="teaType">Lemon Tea</li>
+                <li class="teaType">Milk Tea</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="example-8">
+        <div>
+            <h1>form handling</h1>
+            <form id="feedbackForm">
+                <label for="feedbackInput">Your Feedback:</label>
+                <input type="text" id="feedbackInput" placeholder="Enter feedback">
+                <button type="submit">Submit feedback</button>
+            </form>
+            <p id="feedbackDisplay"></p>
+        </div>
+
+    </section>
+
+    <script src="./dom-script.js"></script>
+</body>
+</html>
